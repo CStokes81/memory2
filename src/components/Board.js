@@ -62,8 +62,14 @@ class Board extends React.Component {
         console.log("Match");
       } else {
         console.log(`Different: ${initialCardContent} != ${secondCardContent}`);
+        setTimeout(() => {
+          this.flipCardTo(this.state.initialCard, false);
+          this.flipCardTo(cardIndex, false);
+          this.setState({ initialCard: null });
+        }, 1000);
       }
     }
+    this.flipCardTo(cardIndex, !this.state.deck[cardIndex].frontShowing);
   }
 
   render() {

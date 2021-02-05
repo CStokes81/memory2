@@ -2,14 +2,16 @@
   border: black;
   border-style: solid;
   background-color: orange;
-  height: 100px;
-  width: 100px;
+  height: 200px;
+  width: 200px;
   border-radius: 5px;
   margin: 5px;
   float: left;
 }
 
-.Card.frontShowing {
+.Card.showing {
   border: black;
+  border-style: solid;
   background-color: cornflowerblue;
+  border-radius: 5px;
 }

@@ -4,7 +4,7 @@ import "./Card.css";
 class Card extends React.Component {
   render() {
     let content;
-    if (this.props.showing) {
+    if (this.props.frontShowing) {
       content = this.props.content;
     } else {
       content = "Back";
@@ -12,7 +12,7 @@ class Card extends React.Component {
     return (
       <div
         onClick={this.props.flip}
-        className={`Card ${this.props.showing ? "frontShowing" : " "}`}
+        className={`Card ${this.props.frontShowing ? "showing" : ""}`}
       >
         {content}
       </div>
