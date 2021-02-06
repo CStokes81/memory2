@@ -1,5 +1,8 @@
 .Board {
   margin: 0px;
   padding: 0px;
-  position: relative;
+  grid-template-columns: 25px, 25px, 25px, 25px;
+  grid-template-rows: 60px auto 60px auto;
+  column-gap: 10px;
+  row-gap: 10px;
 }

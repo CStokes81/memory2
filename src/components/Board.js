@@ -16,7 +16,16 @@ class Board extends React.Component {
       "tictok",
       "twitter",
       "whatsapp",
-    ];
+    ]; /*.map((cardImage, index) => {
+      return (
+        <img
+          key={index}
+          className="img-responsive"
+          alt=""
+          src={require(`./img/${cardImage}.png`)}
+        />
+      );
+    });*/
 
     const deck = cardImage
       .concat(cardImage)
