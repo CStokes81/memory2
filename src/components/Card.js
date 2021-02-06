@@ -15,6 +15,9 @@ class Card extends React.Component {
         className={`Card ${this.props.frontShowing ? "showing" : ""}`}
       >
         {content}
+        {this.props.frontShowing ? (
+          <img src={`./img/${this.props.content}.png `} alt=""></img>
+        ) : null}
       </div>
     );
   }
