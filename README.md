@@ -1,3 +1,9 @@
+# The Memory Game
+
+This game is a re-make of the classic flip a card and find it's match game.
+
+---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

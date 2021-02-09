@@ -77,11 +77,6 @@ class Board extends React.Component {
     this.flipCardTo(cardIndex, !this.state.deck[cardIndex].frontShowing);
   }
 
-  /*handleNewGameButton(e) {
-    e.preventDefault();
-    this.props.quitGame();
-  }*/
-
   render() {
     console.log(this.state.initialCard);
     return this.state.deck.map((c, i) => {
