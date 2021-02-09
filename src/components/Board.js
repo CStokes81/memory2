@@ -7,15 +7,20 @@ class Board extends React.Component {
     super(props);
     const cardImage = [
       "eBay",
-      "etsy",
-      "facebook",
-      "instagram",
+      "Etsy",
+      "Facebook",
+      "Instagram",
       "Linkedin",
-      "pinterest",
-      "snapchat",
-      "tictok",
-      "twitter",
-      "whatsapp",
+      "Pinterest",
+      "Snapchat",
+      "Tictok",
+      "Twitter",
+      "Whatsapp",
+      "YouTube",
+      "Skype",
+      "WeChat",
+      "tumblr",
+      "Zoom",
     ];
 
     const deck = cardImage
@@ -71,6 +76,11 @@ class Board extends React.Component {
     }
     this.flipCardTo(cardIndex, !this.state.deck[cardIndex].frontShowing);
   }
+
+  /*handleNewGameButton(e) {
+    e.preventDefault();
+    this.props.quitGame();
+  }*/
 
   render() {
     console.log(this.state.initialCard);
