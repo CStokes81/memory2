@@ -12,6 +12,6 @@
 .Card.showing {
   border: black;
   border-style: solid;
-  background-color: cornflowerblue;
+  background-color: whitesmoke;
   border-radius: 5px;
 }
